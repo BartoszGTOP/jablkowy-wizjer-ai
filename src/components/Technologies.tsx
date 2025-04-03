@@ -12,16 +12,16 @@ const Technologies = () => {
     <section id="technologie" className="section-padding bg-apple-gray-light">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-apple-gray-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-semibold text-apple-gray-dark mb-4 animate-fade-in">
             Technologie, które wykorzystujemy
           </h2>
-          <p className="text-apple-gray max-w-2xl mx-auto">
+          <p className="text-apple-gray max-w-2xl mx-auto animate-fade-in" style={{animationDelay: "0.2s"}}>
             Nasze rozwiązania opierają się na najnowocześniejszych technologiach sztucznej inteligencji i uczenia maszynowego.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-1 md:col-span-2 animate-slide-up">
             <div className="bg-white rounded-3xl p-8 h-full shadow-sm">
               <h3 className="text-xl font-medium text-apple-gray-dark mb-6">Wykorzystywane technologie</h3>
               <div className="flex flex-wrap gap-3">
@@ -38,7 +38,7 @@ const Technologies = () => {
             </div>
           </div>
           
-          <div>
+          <div className="animate-slide-up" style={{animationDelay: "0.3s"}}>
             <div className="bg-gradient-to-br from-apple-blue to-apple-highlight rounded-3xl p-8 h-full text-white shadow-sm">
               <h3 className="text-xl font-medium mb-6">Dlaczego my?</h3>
               <ul className="space-y-4">
@@ -63,11 +63,11 @@ const Technologies = () => {
           </div>
         </div>
         
-        <div className="bg-white rounded-3xl p-8 shadow-sm">
+        <div className="bg-white rounded-3xl p-8 shadow-sm animate-slide-up" style={{animationDelay: "0.5s"}}>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="text-center p-6">
               <div className="text-4xl font-bold text-apple-blue mb-2">5+</div>
-              <div className="text-apple-gray">Lat doświadczenia</div>
+              <div className="text-apple-gray">Lat działalności</div>
             </div>
             
             <div className="text-center p-6">

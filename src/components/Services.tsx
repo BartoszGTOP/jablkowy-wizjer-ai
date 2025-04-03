@@ -37,24 +37,24 @@ const serviceItems = [
 
 const Services = () => {
   return (
-    <section id="uslugi" className="section-padding bg-apple-gray-light">
+    <section id="uslugi" className="section-padding apple-section-transition">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-apple-gray-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 animate-fade-in">
             Nasze usługi
           </h2>
-          <p className="text-apple-gray max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto animate-fade-in" style={{animationDelay: "0.2s"}}>
             Oferujemy kompleksowe rozwiązania automatyzacji procesów biznesowych wykorzystując najnowsze osiągnięcia w dziedzinie sztucznej inteligencji.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {serviceItems.map((service, index) => (
-            <Card key={index} className="glass-card border-0 overflow-hidden animate-fade-in" style={{animationDelay: `${index * 0.1}s`}}>
+            <Card key={index} className="dark-glass-card overflow-hidden animate-slide-up" style={{animationDelay: `${index * 0.1}s`}}>
               <CardContent className="p-8">
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-medium text-apple-gray-dark mb-2">{service.title}</h3>
-                <p className="text-apple-gray">{service.description}</p>
+                <h3 className="text-xl font-medium text-white mb-2">{service.title}</h3>
+                <p className="text-gray-400">{service.description}</p>
               </CardContent>
             </Card>
           ))}
