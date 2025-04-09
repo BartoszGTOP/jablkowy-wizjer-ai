@@ -1,101 +1,156 @@
 
 import React from "react";
+import {
+  CheckCircle2,
+  DollarSign,
+  Clock,
+  LineChart,
+  ShieldCheck,
+  Users
+} from "lucide-react";
 
 const Benefits = () => {
   return (
-    <section id="korzysci" className="section-padding bg-gradient-to-b from-apple-gray-dark to-apple-gray">
-      <div className="max-w-7xl mx-auto">
+    <section id="benefits" className="tudi-section bg-primary/5">
+      <div className="tudi-container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 animate-fade-in">
-            Dlaczego automatyzacja AI?
+          <h2 className="mb-4 opacity-0 animate-fade-in">
+            <span className="tudi-gradient-text">Korzyści</span> z automatyzacji AI
           </h2>
-          <p className="text-gray-300 max-w-2xl mx-auto animate-fade-in" style={{animationDelay: "0.2s"}}>
-            Poznaj kluczowe korzyści, jakie przynosi inteligentna automatyzacja procesów biznesowych.
+          <p className="text-foreground/70 max-w-2xl mx-auto opacity-0 animate-fade-in stagger-1">
+            Poznaj kluczowe korzyści, jakie przynosi inteligentna automatyzacja procesów biznesowych i dlaczego warto zainwestować w AI już teraz.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div className="order-2 md:order-1">
-            <div className="space-y-8">
-              <div className="flex gap-5 animate-slide-up" style={{animationDelay: "0.2s"}}>
-                <div className="flex-shrink-0 h-12 w-12 bg-apple-blue rounded-full flex items-center justify-center text-white font-medium">
-                  01
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="order-2 lg:order-1">
+            <div className="space-y-10">
+              <div className="flex gap-6 opacity-0 animate-fade-in" style={{animationDelay: "0.2s"}}>
+                <div className="flex-shrink-0 h-14 w-14 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <DollarSign className="h-7 w-7 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-white mb-3">Zwiększona efektywność</h3>
-                  <p className="text-gray-300">Automatyzacja rutynowych zadań pozwala zaoszczędzić czas i zasoby, umożliwiając skupienie się na strategicznych inicjatywach.</p>
+                  <h3 className="text-xl font-semibold mb-2">Redukcja kosztów operacyjnych</h3>
+                  <p className="text-foreground/70">
+                    Zmniejsz wydatki operacyjne nawet o 40% dzięki automatyzacji powtarzalnych zadań i optymalizacji procesów.
+                  </p>
                 </div>
               </div>
               
-              <div className="flex gap-5 animate-slide-up" style={{animationDelay: "0.3s"}}>
-                <div className="flex-shrink-0 h-12 w-12 bg-apple-blue rounded-full flex items-center justify-center text-white font-medium">
-                  02
+              <div className="flex gap-6 opacity-0 animate-fade-in" style={{animationDelay: "0.3s"}}>
+                <div className="flex-shrink-0 h-14 w-14 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <Clock className="h-7 w-7 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-white mb-3">Redukcja kosztów</h3>
-                  <p className="text-gray-300">Zoptymalizowane procesy biznesowe przekładają się na znaczące oszczędności operacyjne i lepsze wykorzystanie zasobów.</p>
+                  <h3 className="text-xl font-semibold mb-2">Oszczędność czasu</h3>
+                  <p className="text-foreground/70">
+                    Automatyzacja procesów skraca czas realizacji zadań o 60-80%, umożliwiając skupienie się na strategicznych inicjatywach.
+                  </p>
                 </div>
               </div>
               
-              <div className="flex gap-5 animate-slide-up" style={{animationDelay: "0.4s"}}>
-                <div className="flex-shrink-0 h-12 w-12 bg-apple-blue rounded-full flex items-center justify-center text-white font-medium">
-                  03
+              <div className="flex gap-6 opacity-0 animate-fade-in" style={{animationDelay: "0.4s"}}>
+                <div className="flex-shrink-0 h-14 w-14 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <LineChart className="h-7 w-7 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-white mb-3">Wyższa jakość</h3>
-                  <p className="text-gray-300">Eliminacja błędów ludzkich prowadzi do bardziej spójnych i niezawodnych wyników w całej organizacji.</p>
+                  <h3 className="text-xl font-semibold mb-2">Wzrost produktywności</h3>
+                  <p className="text-foreground/70">
+                    Zespoły, które wykorzystują nasze rozwiązania AI, notują średnio 35% wzrost wydajności operacyjnej.
+                  </p>
                 </div>
               </div>
               
-              <div className="flex gap-5 animate-slide-up" style={{animationDelay: "0.5s"}}>
-                <div className="flex-shrink-0 h-12 w-12 bg-apple-blue rounded-full flex items-center justify-center text-white font-medium">
-                  04
+              <div className="flex gap-6 opacity-0 animate-fade-in" style={{animationDelay: "0.5s"}}>
+                <div className="flex-shrink-0 h-14 w-14 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <ShieldCheck className="h-7 w-7 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-white mb-3">Lepsze doświadczenia klientów</h3>
-                  <p className="text-gray-300">Szybsza i bardziej spersonalizowana obsługa tworzy lojalnych klientów i pozytywne opinie o marce.</p>
+                  <h3 className="text-xl font-semibold mb-2">Eliminacja błędów</h3>
+                  <p className="text-foreground/70">
+                    Minimalizacja ryzyka poprzez wyeliminowanie błędów ludzkich w krytycznych procesach biznesowych.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex gap-6 opacity-0 animate-fade-in" style={{animationDelay: "0.6s"}}>
+                <div className="flex-shrink-0 h-14 w-14 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <Users className="h-7 w-7 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Lepsze doświadczenia klientów</h3>
+                  <p className="text-foreground/70">
+                    Szybsza i spersonalizowana obsługa klienta generująca 28% wzrost satysfakcji i lojalności.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="order-1 md:order-2">
-            <div className="relative h-[500px] w-full rounded-3xl overflow-hidden perspective-3d animate-fade-in" style={{animationDelay: "0.3s"}}>
-              <div className="absolute inset-0 bg-gradient-to-br from-apple-gray-dark to-black flex items-center justify-center dark-glass-card">
-                <div className="text-center p-8">
-                  <div className="text-apple-blue text-6xl font-bold mb-6 animate-scale-pulse">+70%</div>
-                  <div className="text-white text-xl font-medium mb-10">Średni wzrost efektywności<br/>po wdrożeniu naszych rozwiązań</div>
-                  
-                  <div className="space-y-8 mt-12">
-                    <div className="animate-slide-up" style={{animationDelay: "0.4s"}}>
-                      <div className="flex justify-between text-sm mb-2">
-                        <span className="text-gray-300 font-medium">Redukcja czasu procesów</span>
-                        <span className="text-apple-blue font-medium">85%</span>
-                      </div>
-                      <div className="h-2 w-full bg-apple-gray-darker rounded-full overflow-hidden">
-                        <div className="h-full bg-apple-blue rounded-full" style={{width: "85%", transition: "width 1.5s ease-out"}}></div>
-                      </div>
-                    </div>
-                    
-                    <div className="animate-slide-up" style={{animationDelay: "0.5s"}}>
-                      <div className="flex justify-between text-sm mb-2">
-                        <span className="text-gray-300 font-medium">Redukcja kosztów</span>
-                        <span className="text-apple-blue font-medium">65%</span>
-                      </div>
-                      <div className="h-2 w-full bg-apple-gray-darker rounded-full overflow-hidden">
-                        <div className="h-full bg-apple-blue rounded-full" style={{width: "65%", transition: "width 1.5s ease-out"}}></div>
-                      </div>
-                    </div>
-                    
-                    <div className="animate-slide-up" style={{animationDelay: "0.6s"}}>
-                      <div className="flex justify-between text-sm mb-2">
-                        <span className="text-gray-300 font-medium">Zwiększenie satysfakcji klientów</span>
-                        <span className="text-apple-blue font-medium">78%</span>
-                      </div>
-                      <div className="h-2 w-full bg-apple-gray-darker rounded-full overflow-hidden">
-                        <div className="h-full bg-apple-blue rounded-full" style={{width: "78%", transition: "width 1.5s ease-out"}}></div>
-                      </div>
-                    </div>
+          <div className="order-1 lg:order-2 opacity-0 animate-fade-in" style={{animationDelay: "0.3s"}}>
+            <div className="relative rounded-3xl overflow-hidden shadow-xl p-8 bg-white border border-border">
+              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-primary to-secondary"></div>
+              
+              <div className="text-center mb-8">
+                <div className="text-primary text-5xl font-bold mb-2">3x ROI</div>
+                <p className="text-foreground/70">Średni zwrot z inwestycji w pierwszym roku</p>
+              </div>
+              
+              <div className="space-y-6">
+                <div>
+                  <div className="flex justify-between text-sm mb-2">
+                    <span className="font-medium">Redukcja kosztów operacyjnych</span>
+                    <span className="font-semibold text-primary">40%</span>
+                  </div>
+                  <div className="h-2 w-full bg-muted rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-primary rounded-full" 
+                      style={{width: "40%", transition: "width 1.5s ease-out"}}
+                    ></div>
+                  </div>
+                </div>
+                
+                <div>
+                  <div className="flex justify-between text-sm mb-2">
+                    <span className="font-medium">Oszczędność czasu</span>
+                    <span className="font-semibold text-primary">70%</span>
+                  </div>
+                  <div className="h-2 w-full bg-muted rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-primary rounded-full" 
+                      style={{width: "70%", transition: "width 1.5s ease-out"}}
+                    ></div>
+                  </div>
+                </div>
+                
+                <div>
+                  <div className="flex justify-between text-sm mb-2">
+                    <span className="font-medium">Wzrost produktywności</span>
+                    <span className="font-semibold text-primary">35%</span>
+                  </div>
+                  <div className="h-2 w-full bg-muted rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-primary rounded-full" 
+                      style={{width: "35%", transition: "width 1.5s ease-out"}}
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-10 p-6 bg-muted/50 rounded-xl">
+                <h4 className="font-semibold mb-4">Przykład oszczędności dla średniej firmy:</h4>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
+                    <span>300 godzin miesięcznie zaoszczędzonych na zadaniach administracyjnych</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
+                    <span>25.000 zł miesięcznych oszczędności na kosztach operacyjnych</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
+                    <span>28% wzrost satysfakcji klientów dzięki szybszej obsłudze</span>
                   </div>
                 </div>
               </div>

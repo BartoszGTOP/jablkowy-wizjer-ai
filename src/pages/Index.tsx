@@ -4,23 +4,31 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Benefits from "../components/Benefits";
-import Technologies from "../components/Technologies";
-import Testimonials from "../components/Testimonials";
+import Team from "../components/Team";
+import Audit from "../components/Audit";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import { Toaster } from "@/components/ui/toaster";
+import { motion } from "framer-motion";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className="min-h-screen bg-background"
+    >
+      <Toaster />
       <Navbar />
       <Hero />
       <Services />
       <Benefits />
-      <Technologies />
-      <Testimonials />
+      <Team />
+      <Audit />
       <Contact />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 
