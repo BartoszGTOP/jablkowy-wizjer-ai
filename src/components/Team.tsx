@@ -3,7 +3,8 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   Linkedin,
-  Twitter
+  Twitter,
+  CheckCircle2
 } from "lucide-react";
 
 const teamMembers = [
